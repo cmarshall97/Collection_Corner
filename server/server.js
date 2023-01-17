@@ -12,7 +12,7 @@ app.use(cors({
 
 //requiring mongoose needs to be before the routes for database to connect
 require('./config/mongoose.config'); 
-// require('./routes/product.routes')(app); 
+require('./routes/collectible.routes')(app); 
 
 app.listen(8000, () => {
     console.log(`Listening on port: 8000`); 
