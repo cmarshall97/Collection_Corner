@@ -1,5 +1,6 @@
 const CollectibleController = require('../controllers/collectible.controller');  
 module.exports = (app) => {
+    // home page to register or login 
     app.get('/');
     // get all pets
     app.get('/allcollectibles', CollectibleController.getAllCollectibles);
