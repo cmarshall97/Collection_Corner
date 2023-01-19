@@ -34,7 +34,7 @@ module.exports= {
             res.json({result})
         }).catch((err)=>{
             res.status(400).json(err) 
-            console.log(err)
+            // console.log(err)
         })
     },
     deleteCollectible: (req,res) => {
