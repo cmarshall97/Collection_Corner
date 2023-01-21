@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom'
 
@@ -27,7 +27,6 @@ const AllCollectibles = () => {
                         </div>
                         <div>
                             <Link to={`/collectible/${collectible._id}`}>{collectible.itemName}</Link>
-                            {/* <p>Owned by:{}</p> */}
                             <p>{collectible.category}</p>
                         </div>
                     </div>

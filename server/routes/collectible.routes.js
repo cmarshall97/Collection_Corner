@@ -1,17 +1,15 @@
 const CollectibleController = require('../controllers/collectible.controller');  
 module.exports = (app) => {
-    // home page to register or login 
-    app.get('/');
-    // get all pets
+    // home page to see all collectibles
+    app.get('/', CollectibleController.getAllCollectibles);
+    // get all collectibles after navigating through site
     app.get('/allcollectibles', CollectibleController.getAllCollectibles);
-    //get one pet
+    //get one collectible
     app.get('/collectible/:id', CollectibleController.getOneCollectible);
-    //create new pet
+    //create new ollectile
     app.post('/collectible/new', CollectibleController.createCollectible);
-    //update pet
+    //update collectible
     app.put('/edit/collectible/:id', CollectibleController.updateCollectible);
-    //delete pet
+    //delete collectible
     app.delete('/:id/delete', CollectibleController.deleteCollectible);
-    //get all pets by user in session
-    app.get('/mycollections');
 }

@@ -5,12 +5,11 @@ const NavBar = ()=> {
     return (
         <div>
             <div>
-                <h2>Hi User!</h2>
+                <h2>Collection Corner</h2>
             </div>
             <div>
-                <NavLink to ="/mycollections"> Dashboard</NavLink>
-                <NavLink to ="/"> Logout</NavLink>
-                <NavLink to ="/allcollectibles"> View ALL Collectibles</NavLink>
+                <NavLink to ="/addnewcollectible"> Add new </NavLink>
+                <NavLink to ="/allcollectibles"> View all</NavLink>
             </div>
         </div>
     )

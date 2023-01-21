@@ -1,8 +1,9 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import AddAndSeeCollectibles from './components/AddAndSeeCollectibles';
+import AddCollectibles from './components/AddCollectibles';
 import AllCollectibles from './components/AllCollectibles';
-import ViewCollectibleCreator from './components/ViewCollectibleCreator';
+import ViewCollectible from './components/ViewCollectible';
+import EditCollectible from './components/EditCollectible';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -12,11 +13,11 @@ function App() {
       <NavBar/>
         <Routes>
           {/* <Route path='/' element= {<Main/>}/> */}
-          <Route path='/mycollections' element= {<AddAndSeeCollectibles/>}/>
+          <Route path='/addnewcollectible' element= {<AddCollectibles/>}/>
           <Route path='/allcollectibles' element= {<AllCollectibles/>}/>
-          <Route path='/collectible/:id' element= {<ViewCollectibleCreator/>}/>
-          <Route path='/:id/delete' element= {<ViewCollectibleCreator/>}/>
-          {/* <Route path='//pets/:id/edit' element= {<EditOnePet/>}/> */}
+          <Route path='/collectible/:id' element= {<ViewCollectible/>}/>
+          <Route path='/:id/delete' element= {<ViewCollectible/>}/>
+          <Route path='/edit/collectible/:id' element= {<EditCollectible/>}/>
         </Routes>
       </BrowserRouter>
     </div>
