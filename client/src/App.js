@@ -12,7 +12,6 @@ function App() {
       <BrowserRouter>
       <NavBar/>
         <Routes>
-          {/* <Route path='/' element= {<Main/>}/> */}
           <Route path='/addnewcollectible' element= {<AddCollectibles/>}/>
           <Route path='/allcollectibles' element= {<AllCollectibles/>}/>
           <Route path='/collectible/:id' element= {<ViewCollectible/>}/>

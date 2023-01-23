@@ -12,7 +12,7 @@ const AllCollectibles = () => {
             console.log(res)
             setList(res.data.result)
         }).catch((err)=> {
-            console.log("There is an error grabbing all the collectibles: "(err))
+            console.log("There is an error grabbing all the collectibles: ", err)
         })
     },[])
 

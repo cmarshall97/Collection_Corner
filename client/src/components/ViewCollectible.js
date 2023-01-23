@@ -14,7 +14,7 @@ const ViewCollectible = () => {
             console.log(res.data.result)
             setCollectible(res.data.result)
         }).catch((err) =>{
-            console.log("There was a problem grabbing this information"(err))
+            console.log("There was a problem grabbing this information", err)
         })
     },[])
 
