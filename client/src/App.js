@@ -1,4 +1,4 @@
-import './App.css';
+import'./App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import AddCollectibles from './components/AddCollectibles';
 import AllCollectibles from './components/AllCollectibles';
@@ -8,7 +8,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <BrowserRouter>
       <NavBar/>
         <Routes>

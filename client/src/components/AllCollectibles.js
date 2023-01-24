@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom'
+import AllCollectiblesCSS from './AllCollectibles.module.css'
 
 const AllCollectibles = () => {
 
@@ -17,13 +18,13 @@ const AllCollectibles = () => {
     },[])
 
     return (
-        <div>
+        <div className ={AllCollectiblesCSS.body}>
             <h1>All Collectibles</h1>
             {
                 list.map((collectible)=>(
-                    <div>
-                        <div className="col col-4 mt-3">
-                            <img src={collectible.link}/>
+                    <div className ={AllCollectiblesCSS.listItem}>
+                        <div>
+                            <img className ={AllCollectiblesCSS.image} src={collectible.link}/>
                         </div>
                         <div>
                             <Link to={`/collectible/${collectible._id}`}>{collectible.itemName}</Link>

@@ -1,0 +1,26 @@
+.body {
+    border-color: black;
+    border-radius: 10px;
+    border-width: 5px;
+    font-family: "fantasy","copperplate";
+    color:rgb(11, 71, 71);
+    align-items: center;
+}
+.listItem {
+    margin:60px;
+    padding:20px;
+    background-color: rgb(147, 224, 199);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    width:fit-content;
+}
+
+.image {
+    border-style: solid;
+    border-width:1px ;
+    border-color: black ;
+    height:200px;
+    margin-right: 10px;;
+}

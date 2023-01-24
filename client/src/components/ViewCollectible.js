@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 import {useNavigate, useParams, Link} from 'react-router-dom'
+import ViewCollectibleCSS from './ViewCollectible.module.css'
 
 const ViewCollectible = () => {
     const {id} = useParams()
@@ -32,15 +33,15 @@ const ViewCollectible = () => {
 
     return (
         <div>
-            <div>
+            <div className ={ViewCollectibleCSS.container}>
                 <h1>{collectible.itemName}</h1>
-                <img src={collectible.link} className="col col-4 mx-auto"/>
+                <img className ={ViewCollectibleCSS.image} src={collectible.link}/>
                 <h3>{collectible.category}</h3>
                 <p>{collectible.description}</p>
             </div>
-            <div>
-                <Link to={`/edit/collectible/${collectible._id}`} ><button>Edit</button></Link>
-                <button className="btn btn-danger" onClick={(e)=>deleteHandler(collectible._id)}>Delete</button>
+            <div className ={ViewCollectibleCSS.buttons}>
+                <Link to={`/edit/collectible/${collectible._id}`} ><button className ={ViewCollectibleCSS.editbtn}>Edit</button></Link>
+                <button className ={ViewCollectibleCSS.deletebtn} onClick={(e)=>deleteHandler(collectible._id)}>Delete</button>
             </div>
         </div>
         )

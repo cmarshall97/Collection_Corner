@@ -1,0 +1,23 @@
+.navBar{
+    padding:10px;
+    margin-bottom: 20px;
+    background-color: rgb(61, 196, 151);
+    border-style: solid;
+    border-color: rgb(134, 133, 133);
+    border-width: 20px;
+    height: fit-content
+}
+
+.title {
+    font-family: "sans-serif","Tahoma";
+    color:rgb(11, 71, 71);
+    font-size: xx-large;
+    align-items: flex-start;
+}
+
+.linkDirectory{
+    display:flex;
+    justify-content:space-evenly;
+    font-family: "sans-serif","Tahoma";
+    color:rgb(13, 14, 14);
+}

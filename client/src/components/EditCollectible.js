@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
+import AddCollectibleCSS from './AddCollectible.module.css'
 
 const EditCollectible = () => {
 
@@ -46,30 +47,30 @@ const EditCollectible = () => {
     }
 
     return(
-        <div className ="col-6 mx-auto">
-            
+        <div className ={AddCollectibleCSS.body}>
+            <h2>Lets Edit this one:</h2>
             <form onSubmit ={submitHandler}>
-                <div>
+                <div className ={AddCollectibleCSS.form}>
                     <label className = "form-label" >Item Name: </label>
                     <input type="text" className= "form-control" value={itemName} onChange={(e)=>setItemName(e.target.value)} />
                     {errors.itemName ? <span className="text-danger">{errors.itemName.message}</span>: null}
                 </div>
-                <div>
+                <div className ={AddCollectibleCSS.form}>
                     <label className = "form-label">Category: </label>
                     <input type="text" className= "form-control" value={category} onChange={(e)=>setCategory(e.target.value)}/>
                     {errors.category ? <span className="text-danger">{errors.category.message}</span>: null}
                 </div>
-                <div>
+                <div className ={AddCollectibleCSS.form}>
                     <label className = "form-label">Link to photo: </label>
                     <input type="text" className= "form-control" value={link} onChange={(e)=>setLink(e.target.value)}/>
                     {errors.link ? <span className="text-danger">{errors.link.message}</span>: null}
                 </div>
-                <div>
+                <div className ={AddCollectibleCSS.form}>
                     <label className = "form-label">Description: </label>
                     <input type="text-area" className= "form-control" value={description} onChange={(e)=>setDescription(e.target.value)}/>
                     {errors.description ? <span className="text-danger">{errors.description.message}</span>: null}
                 </div>
-                <button type="submit">Update</button>
+                <button className={AddCollectibleCSS.btn} type="submit">Update</button>
             </form>
         </div>
     )

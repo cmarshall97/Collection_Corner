@@ -1,0 +1,23 @@
+.body {
+    background-image: url(./static/background.jpg);
+    /* height: 700px; */
+    min-height: 100vh;
+    margin:10px;
+    padding: 30px;
+    font-family: "sans-serif","Tahoma";
+    color:rgb(11, 71, 71);
+}
+.form {
+    display:column;
+    align-items: center;
+    font-family: "sans-serif","Tahoma";
+    color:rgb(11, 71, 71);
+    margin:5px;
+    height:70px;
+}
+
+.btn {
+    background-color: rgb(87, 79, 79) ;
+    color:antiquewhite;
+    
+}
