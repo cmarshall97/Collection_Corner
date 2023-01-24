@@ -1,4 +1,6 @@
 .container {
+    background-color: rgb(147, 224, 199);
+    border-style: solid;
     border-color: black;
     border-radius: 20px;
     border-width: 5px;

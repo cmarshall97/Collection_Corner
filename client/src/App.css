@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:rgb(11, 71, 71); ;
   /* background-image: url(./static/background.jpg); */
   /* height:1200px; */
   min-height: 100vh;
